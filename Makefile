@@ -194,7 +194,7 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/i386/ -e s/sun4u/sparc64/ \
 export KBUILD_BUILDHOST := $(SUBARCH)
 #ARCH		?= $(SUBARCH)
 ARCH		?= arm
-CROSS_COMPILE	?= $(CONFIG_CROSS_COMPILE:"%"=%)
+CROSS_COMPILE	?= /home/user/tiny4412/opt/FriendlyARM/toolschain/4.5.1/bin/arm-linux-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
